@@ -1,0 +1,393 @@
+Source: linux-rk2410
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: admin
+Priority: standard
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+            devscripts,
+            lintian,
+            dh-exec,
+            flex,
+            bison,
+            bc,
+            libncurses-dev,
+            crossbuild-essential-arm64 [!arm64],
+            binfmt-support [!arm64],
+            qemu-user-static [!arm64],
+            libc6:arm64 [!arm64],
+            libssl-dev:arm64,
+            cpio,
+            kmod:arm64,
+            libyaml-dev:arm64,
+
+Package: linux-image-rock-5a
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for ROCK 5A
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rock-5a
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for ROCK 5A
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rock-5a
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for ROCK 5A
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-rock-5b
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for ROCK 5B
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rock-5b
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for ROCK 5B
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rock-5b
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for ROCK 5B
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-rock-5b-plus
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for ROCK 5B+
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rock-5b-plus
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for ROCK 5B+
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rock-5b-plus
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for ROCK 5B+
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-rock-5c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for ROCK 5C
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rock-5c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for ROCK 5C
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rock-5c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for ROCK 5C
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-rock-5d
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for ROCK 5D
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rock-5d
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for ROCK 5D
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rock-5d
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for ROCK 5D
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-rock-5t
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for ROCK 5T
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rock-5t
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for ROCK 5T
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rock-5t
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for ROCK 5T
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-rock-5-itx
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for ROCK 5 ITX
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rock-5-itx
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for ROCK 5 ITX
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rock-5-itx
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for ROCK 5 ITX
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-e52c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa E52C
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-e52c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa E52C
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-e52c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa E52C
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-e54c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa E54C
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-e54c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa E54C
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-e54c
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa E54C
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-nx5-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa NX5 IO
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-nx5-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa NX5 IO
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-nx5-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa NX5 IO
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-cm5-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa CM5 IO
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-cm5-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa CM5 IO
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-cm5-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa CM5 IO
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-cm5-rpi-cm4-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa CM5 RPI CM4 IO
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-cm5-rpi-cm4-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa CM5 RPI CM4 IO
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-cm5-rpi-cm4-io
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2410,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa CM5 RPI CM4 IO
+ This is the meta-package for Linux libc-dev.

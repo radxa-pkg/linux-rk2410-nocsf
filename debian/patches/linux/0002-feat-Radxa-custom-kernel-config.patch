@@ -46,11 +46,11 @@ index 000000000000..d9550fafb022
 +# * Ignore exclusive access <= this config
 +# * Remove exclusive access from Mali
 +# * Remove exclusive access from libdrm
-+CONFIG_DRM_IGNORE_IOTCL_PERMIT=y
++CONFIG_DRM_IGNORE_IOTCL_PERMIT=n
 +
 +# Enable Mali CSF
 +# Fix `Unable to handle kernel paging request at virtual address` error on boot
-+CONFIG_MALI_CSF_SUPPORT=y
++# CONFIG_MALI_CSF_SUPPORT=y
 +
 +# Enable Rockchip NPU
 +CONFIG_ROCKCHIP_RKNPU=y

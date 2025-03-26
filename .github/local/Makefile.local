@@ -1,1 +1,1 @@
-KERNEL_DEFCONFIG := rockchip_linux_defconfig radxa.config radxa_custom.config
+KERNEL_DEFCONFIG := rockchip_linux_defconfig rk3588_linux.config radxa.config radxa_custom.config

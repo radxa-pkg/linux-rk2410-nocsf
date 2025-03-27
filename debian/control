@@ -1,4 +1,4 @@
-Source: linux-rk2410
+Source: linux-rk2410-nocsf
 Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
 Section: admin
 Priority: standard

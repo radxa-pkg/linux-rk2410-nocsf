@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: linux-rk2410
-Source: https://github.com/radxa-pkg/linux-rk2410
+Upstream-Name: linux-rk2410-nocsf
+Source: https://github.com/radxa-pkg/linux-rk2410-nocsf
 
 Files: *
 Copyright: © 2025 Radxa Computer Co., Ltd

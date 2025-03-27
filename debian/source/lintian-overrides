@@ -1,4 +1,4 @@
 # Our package is built on GitHub-hosted runner,
 # which uses Ubuntu, and will default to zstd compression.
 # This is currently not supported in Debian.
-linux-rk2410 source: custom-compression-in-debian-rules
+linux-rk2410-nocsf source: custom-compression-in-debian-rules

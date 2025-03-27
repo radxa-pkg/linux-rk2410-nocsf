@@ -1,4 +1,4 @@
-linux-rk2410 (6.1.84-5) UNRELEASED; urgency=medium
+linux-rk2410-nocsf (6.1.84-5) UNRELEASED; urgency=medium
 
   * Add initial Debian packaging support
 

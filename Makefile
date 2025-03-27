@@ -1,5 +1,5 @@
 -include .github/local/Makefile.local
-PROJECT ?= linux-rk2410
+PROJECT ?= linux-rk2410-nocsf
 
 KERNEL_FORK ?= rk2410
 ARCH ?= arm64

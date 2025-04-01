@@ -1,7 +1,7 @@
 -include .github/local/Makefile.local
 PROJECT ?= linux-rk2410-nocsf
 
-KERNEL_FORK ?= rk2410
+KERNEL_FORK ?= rk2410-nocsf
 ARCH ?= arm64
 CROSS_COMPILE ?= aarch64-linux-gnu-
 DPKG_FLAGS ?= -d

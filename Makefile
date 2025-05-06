@@ -6,11 +6,12 @@ ARCH ?= arm64
 CROSS_COMPILE ?= aarch64-linux-gnu-
 DPKG_FLAGS ?= -d
 KERNEL_DEFCONFIG ?= defconfig radxa.config
+CUSTOM_ENV_DEFINITIONS ?=
 CUSTOM_MAKE_DEFINITIONS ?=
 CUSTOM_DEBUILD_ENV ?= DEB_BUILD_OPTIONS='parallel=1'
 SUPPORT_CLEAN ?= true
 
-KMAKE ?= $(MAKE) -C "$(SRC-KERNEL)" -j$(shell nproc) \
+KMAKE ?= $(CUSTOM_ENV_DEFINITIONS) $(MAKE) -C "$(SRC-KERNEL)" -j$(shell nproc) \
 			$(CUSTOM_MAKE_DEFINITIONS) \
 			ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) HOSTCC=$(CROSS_COMPILE)gcc \
 			KDEB_COMPRESS="xz" KDEB_CHANGELOG_DIST="unstable" DPKG_FLAGS=$(DPKG_FLAGS) \
@@ -92,7 +93,9 @@ clean-deb:
 #
 .PHONY: dch
 dch: debian/changelog
-	EDITOR=true gbp dch --ignore-branch --multimaint-merge --git-log='--no-merges --perl-regexp --invert-grep --grep=^(chore:\stemplates\sgenerated)' --release --dch-opt=--upstream --commit
+	gbp dch --ignore-branch --multimaint-merge --release --spawn-editor=never \
+	--git-log='--no-merges --perl-regexp --invert-grep --grep=^(chore:\stemplates\sgenerated)' \
+	--dch-opt=--upstream --commit --commit-msg="feat: release %(version)s"
 
 .PHONY: deb
 deb: debian

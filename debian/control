@@ -179,7 +179,7 @@ Provides: linux-image
 Depends: radxa-overlays-dkms,
          linux-image-${binary:Version}-rk2410-nocsf,
          ${misc:Depends},
-Description: Radxa Linux meta-package for Radxa CM3 IO
+Description: Radxa Linux meta-package for Radxa CM3I IO
  This is the meta-package for Linux kernel.
 
 Package: linux-headers-radxa-cm3i-io
@@ -189,7 +189,7 @@ Priority: optional
 Provides: linux-headers
 Depends: linux-headers-${binary:Version}-rk2410-nocsf,
          ${misc:Depends},
-Description: Radxa Linux headers meta-package for Radxa CM3 IO
+Description: Radxa Linux headers meta-package for Radxa CM3I IO
  This is the meta-package for Linux headers.
 
 Package: linux-libc-dev-radxa-cm3i-io
@@ -199,7 +199,7 @@ Priority: optional
 Provides: linux-libc-dev
 Depends: linux-libc-dev-${binary:Version}-rk2410-nocsf,
          ${misc:Depends},
-Description: Radxa Linux libc-dev meta-package for Radxa CM3 IO
+Description: Radxa Linux libc-dev meta-package for Radxa CM3I IO
  This is the meta-package for Linux libc-dev.
 
 Package: linux-image-radxa-e25

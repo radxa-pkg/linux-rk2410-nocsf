@@ -1,3 +1,20 @@
+linux-rk2410-nocsf (6.1.84-13) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * chore: update build dependencies
+  * fix: disable broken module
+
+  [ Honglin Leng ]
+  * fix: Updated the description of Radxa CM3 IO to Radxa CM3I IO
+  * feat: add cm3-io board support
+  * feat: add rock-3a board support
+  * feat: add rock-3b board support
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 08 Dec 2025 10:42:36 +0000
+
 linux-rk2410-nocsf (6.1.84-12) unstable; urgency=medium
 
   [ Jiali Chen ]

@@ -1,0 +1,14 @@
+{
+  "*": {
+    "Releases": [
+      "rk3566-bookworm",
+      "rk3566-bookworm-test",
+      "rk3566t-bookworm",
+      "rk3566t-bookworm-test",
+      "rk3568-bookworm",
+      "rk3568-bookworm-test",
+      "rk3576-bookworm",
+      "rk3576-bookworm-test"
+    ]
+  }
+}

@@ -1,3 +1,13 @@
+linux-rk2410-nocsf (6.1.84-17) unstable; urgency=medium
+
+  [ Xinming Chen ]
+  * feat: add radxa-cm3-rpi-cm4-io configuration
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 26 May 2026 07:41:43 +0000
+
 linux-rk2410-nocsf (6.1.84-16) unstable; urgency=medium
 
   [ github-actions[bot] ]

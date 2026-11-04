@@ -1,3 +1,10 @@
+linux-rk2410-nocsf (6.1.84-19) unstable; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Wed, 04 Nov 2026 07:30:37 +0000
+
 linux-rk2410-nocsf (6.1.84-18) unstable; urgency=medium
 
   [ github-actions[bot] ]
